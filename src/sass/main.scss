@@ -2,5 +2,192 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 65%;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+}
+main {
+  float: left;
+  font-size: 1.5rem;
+  padding: 0;
+  position: relative;
+  display: block;
+  .content {
+    @include linear-gradient(to right, #d7d7d7 0%, #fff 3%, #fff 97%, #d7d7d7 100% );
+    position:relative;
+    float: left;
+    width: 100%;
+    padding: 5rem;
+    text-align: justify;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    aside {
+    float: right;
+      width: 36rem;
+      padding: 2rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      p {
+        padding: 0 1rem;
+        margin: 0;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+.hero {
+  display: block;
+  position: relative;
+  float: left;
+  box-shadow: 0 0.2rem 1rem 0.5rem #333;
+  line-height: 0;
+  z-index: 5;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.iso {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 15rem;
+  height: auto;
+  z-index: 30;
+  padding: 0;
+  margin: 0;
+}
+.bannertext {
+  position: absolute;
+  top: 7%;
+  right: 2%;
+  font-size: 4rem;
+  font-weight: normal;
+  text-shadow: rgba(0,0,0,0.5) 1px 2px;
+  color: #ffc859;
+  z-index: 10;
+}
+.topbar {
+  position: relative;
+  width: 100%;
+  display: block;
+  float: left;
+  background: #333333;
+  color: #f2f1dc;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem 0 1rem;
+  text-align: right;
+  border-top: 0.3rem solid #ffb800;
+  border-bottom: 0.2rem solid #111;
+  p {
+    display: inline-block;
+  }
+  .in {
+    margin-left: 2rem;
+    display: inline-table;
+    vertical-align: middle;
+    a {
+      display: table-cell;
+      line-height: 0;
+      img {
+        height: 3rem;
+        width: 3rem;
+      }
+      &:hover {
+       @include radial-gradient(circle, #ffb800 0%, #ffb800 20%, transparent 90%);
+      }
+    }
+
+  }
+}
+
+header {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 8rem;
+  display: block;
+  border-bottom: 0.1rem solid #222;
+  box-shadow: 0 0.2rem 0.5rem 0.3rem #333;
+  z-index: 20;
+  @include linear-gradient(to bottom, #AAA 0%, #999 8%, #777 20%, #777 85%, #444 95%);
 
 
+  .logo {
+    display: inline-block;
+    height: 90%;
+    width: auto;
+    padding: 0.5% 1% 0.4% 1%;
+    box-sizing: padding-box;
+    @include transition(all 0.5s ease-in-out);
+
+    &:hover {
+      @include transform(scale(1.05));
+    }
+  }
+  nav {
+    position: relative;
+    float: right;
+    display: table;
+    height: 100%;
+    ul {
+      height: 100%;
+      margin: 0 1rem;
+      li {
+        height: 100% ;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+      }
+      li a {
+        @include transition(all 0.5s ease-in-out);
+        display: table;
+        height: 100%;
+        border-top: 0.7rem solid transparent;
+        border-radius: 0.2rem 0.2rem 0 0;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        color: #ccc9b8;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1.3rem 1rem 0 1rem;
+          &:hover {
+            color: #fffee6;
+            text-decoration: underline;
+          }
+        &:focus {
+          background: rgba(50,50,50,0.3);
+          border-color: #ffb800;
+          color: #fffee6;
+          padding-top: 2rem;
+        }
+
+        }
+    }
+
+  }
+
+}

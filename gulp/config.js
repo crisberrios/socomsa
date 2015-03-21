@@ -9,12 +9,9 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/*.{sass,scss}",
-    dest: dest + "/css",
-    settings: {
-      indentedSyntax: false, // Enable .sass syntax!
-      imagePath: 'images' // Used by the image-url helper
-    }
+    srcFiles: src + "/sass/**",
+    src: src + "/sass",
+    dest: dest + "/css"
   },
   images: {
     src: src + "/images/**",
@@ -57,7 +54,7 @@ module.exports = {
     }]
   },
   production: {
-    cssSrc: dest + '/*.css',
+    cssSrc: dest + '/css/*.css',
     jsSrc: dest + '/*.js',
     dest: dest
   }

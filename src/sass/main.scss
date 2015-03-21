@@ -1,4 +1,4 @@
-@import "normalize";
+@import "resets/normalize";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 65%;
+  font-size: 0.8vw;
   min-height: 100%;
 }
 body {
@@ -101,11 +101,12 @@ main {
   border-bottom: 0.2rem solid #111;
   p {
     display: inline-block;
+    line-height: 2rem;
+    vertical-align: bottom;
   }
   .in {
     margin-left: 2rem;
     display: inline-table;
-    vertical-align: middle;
     a {
       display: table-cell;
       line-height: 0;
@@ -128,7 +129,7 @@ header {
   margin: 0;
   padding: 0;
   height: 8rem;
-  display: block;
+  display: table;
   border-bottom: 0.1rem solid #222;
   box-shadow: 0 0.2rem 0.5rem 0.3rem #333;
   z-index: 20;
@@ -137,9 +138,9 @@ header {
 
   .logo {
     display: inline-block;
-    height: 90%;
+    height: 7rem;
     width: auto;
-    padding: 0.5% 1% 0.4% 1%;
+    padding: 0.5rem 1rem 0.4rem 1rem;
     box-sizing: padding-box;
     @include transition(all 0.5s ease-in-out);
 
@@ -151,12 +152,10 @@ header {
     position: relative;
     float: right;
     display: table;
-    height: 100%;
+    height: 5rem;
     ul {
-      height: 100%;
       margin: 0 1rem;
       li {
-        height: 100% ;
         display: inline-block;
         padding: 0;
         margin: 0;
@@ -167,13 +166,13 @@ header {
         display: table;
         height: 100%;
         border-top: 0.7rem solid transparent;
-        border-radius: 0.2rem 0.2rem 0 0;
+        border-radius: 0 0 0.3rem 0.3rem;
         box-sizing: border-box;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: #ccc9b8;
         text-decoration: none;
         font-weight: bold;
-        padding: 1.3rem 1rem 0 1rem;
+        padding: 1.5rem 1rem 0 1rem;
           &:hover {
             color: #fffee6;
             text-decoration: underline;
@@ -183,6 +182,7 @@ header {
           border-color: #ffb800;
           color: #fffee6;
           padding-top: 2rem;
+          padding-bottom: 1rem;
         }
 
         }

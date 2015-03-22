@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17904c5-ea0a-4805-80aa-2664917ab7cb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/cables2.png" afterPath="$PROJECT_DIR$/build/images/cables2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca1.png" afterPath="$PROJECT_DIR$/build/images/marca1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca2.png" afterPath="$PROJECT_DIR$/build/images/marca2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca3.png" afterPath="$PROJECT_DIR$/build/images/marca3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca4.png" afterPath="$PROJECT_DIR$/build/images/marca4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca5.png" afterPath="$PROJECT_DIR$/build/images/marca5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca6.png" afterPath="$PROJECT_DIR$/build/images/marca6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca7.png" afterPath="$PROJECT_DIR$/build/images/marca7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca8.png" afterPath="$PROJECT_DIR$/build/images/marca8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca9.png" afterPath="$PROJECT_DIR$/build/images/marca9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/equipo.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="socomsa.iws" />
@@ -266,6 +254,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -414,7 +438,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426997940863</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="rebuild">
+      <created>1426998278447</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1426998278447</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -488,7 +518,8 @@
     <MESSAGE value="- Smooth scrolling&#10;- Carousel&#10;- Content additions&#10;" />
     <MESSAGE value="Improvements in header and footer" />
     <MESSAGE value="Footer additions, overall improvements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer additions, overall improvements." />
+    <MESSAGE value="rebuild" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuild" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

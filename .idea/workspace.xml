@@ -1,40 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d17904c5-ea0a-4805-80aa-2664917ab7cb" name="Default" comment="Smooth s">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cables1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cables2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/empresa.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/iso9001.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marca9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marca9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/marcas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/marcas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/power-cable.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/map/_map.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/cables2.png" afterPath="$PROJECT_DIR$/build/images/cables2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javascript/bundle.js" afterPath="$PROJECT_DIR$/src/javascript/bundle.js" />
+    <list default="true" id="d17904c5-ea0a-4805-80aa-2664917ab7cb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/textures/_textures.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jade/index.jade" afterPath="$PROJECT_DIR$/src/jade/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
@@ -63,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jade/index.jade">
+      <file leaf-file-name="_textures.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/textures/_textures.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5726644" vertical-offset="448" max-vertical-offset="1026">
-              <caret line="41" column="784" selection-start-line="41" selection-start-column="784" selection-end-line="41" selection-end-column="784" />
+            <state vertical-scroll-proportion="-8.62963" vertical-offset="1781" max-vertical-offset="2432">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,14 +54,21 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.962963" vertical-offset="1906" max-vertical-offset="2470">
-              <caret line="241" column="60" selection-start-line="241" selection-start-column="60" selection-end-line="241" selection-end-column="60" />
+            <state vertical-scroll-proportion="-8.537037" vertical-offset="4384" max-vertical-offset="5035">
+              <caret line="262" column="26" selection-start-line="262" selection-start-column="26" selection-end-line="262" selection-end-column="26" />
               <folding>
-                <element signature="e#1215#1346#0" expanded="false" />
-                <element signature="e#1560#1733#0" expanded="false" />
-                <element signature="e#1742#2406#0" expanded="false" />
-                <element signature="e#2415#3892#0" expanded="false" />
+                <element signature="e#1252#1383#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1285956" vertical-offset="0" max-vertical-offset="591">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,8 +122,9 @@
         <option value="$PROJECT_DIR$/src/jade/partials/_layout.jade" />
         <option value="$PROJECT_DIR$/src/sass/map/_map.scss" />
         <option value="$PROJECT_DIR$/src/javascript/bundle.js" />
-        <option value="$PROJECT_DIR$/src/sass/main.scss" />
         <option value="$PROJECT_DIR$/src/jade/index.jade" />
+        <option value="$PROJECT_DIR$/src/sass/textures/_textures.scss" />
+        <option value="$PROJECT_DIR$/src/sass/main.scss" />
       </list>
     </option>
   </component>
@@ -206,186 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socomsa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,7 +315,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426900194282</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Smooth scrolling&#10;- Carousel&#10;- Content additions&#10;">
+      <created>1426921703989</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1426921703989</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +392,8 @@
     <MESSAGE value="-added missing files" />
     <MESSAGE value="-relative paths for rawgit viz" />
     <MESSAGE value="fluid layout improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="fluid layout improvements" />
+    <MESSAGE value="- Smooth scrolling&#10;- Carousel&#10;- Content additions&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Smooth scrolling&#10;- Carousel&#10;- Content additions&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -618,10 +421,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3781">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1215#1346#0" expanded="false" />
-            <element signature="e#1560#1733#0" expanded="false" />
-            <element signature="e#1742#2406#0" expanded="false" />
-            <element signature="e#2415#3892#0" expanded="false" />
+            <element signature="e#1252#1383#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1285956" vertical-offset="0" max-vertical-offset="591">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13793103" vertical-offset="0" max-vertical-offset="9614">
@@ -935,23 +727,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/jade/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13148789" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/textures/_textures.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.62963" vertical-offset="1781" max-vertical-offset="2432">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.962963" vertical-offset="1906" max-vertical-offset="2470">
-          <caret line="241" column="60" selection-start-line="241" selection-start-column="60" selection-end-line="241" selection-end-column="60" />
+        <state vertical-scroll-proportion="-8.537037" vertical-offset="4384" max-vertical-offset="5035">
+          <caret line="262" column="26" selection-start-line="262" selection-start-column="26" selection-end-line="262" selection-end-column="26" />
           <folding>
-            <element signature="e#1215#1346#0" expanded="false" />
-            <element signature="e#1560#1733#0" expanded="false" />
-            <element signature="e#1742#2406#0" expanded="false" />
-            <element signature="e#2415#3892#0" expanded="false" />
+            <element signature="e#1252#1383#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jade/index.jade">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5726644" vertical-offset="448" max-vertical-offset="1026">
-          <caret line="41" column="784" selection-start-line="41" selection-start-column="784" selection-end-line="41" selection-end-column="784" />
+        <state vertical-scroll-proportion="0.1285956" vertical-offset="0" max-vertical-offset="591">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

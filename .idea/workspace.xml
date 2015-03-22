@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17904c5-ea0a-4805-80aa-2664917ab7cb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javascript/bundle.js" afterPath="$PROJECT_DIR$/src/javascript/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jade/index.jade" afterPath="$PROJECT_DIR$/src/jade/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/cables2.png" afterPath="$PROJECT_DIR$/build/images/cables2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca1.png" afterPath="$PROJECT_DIR$/build/images/marca1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca2.png" afterPath="$PROJECT_DIR$/build/images/marca2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca3.png" afterPath="$PROJECT_DIR$/build/images/marca3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca4.png" afterPath="$PROJECT_DIR$/build/images/marca4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca5.png" afterPath="$PROJECT_DIR$/build/images/marca5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca6.png" afterPath="$PROJECT_DIR$/build/images/marca6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca7.png" afterPath="$PROJECT_DIR$/build/images/marca7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca8.png" afterPath="$PROJECT_DIR$/build/images/marca8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/images/marca9.png" afterPath="$PROJECT_DIR$/build/images/marca9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="socomsa.iws" />
@@ -52,8 +62,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43389198" vertical-offset="4764" max-vertical-offset="5833">
-              <caret line="330" column="48" selection-start-line="330" selection-start-column="48" selection-end-line="330" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.32774675" vertical-offset="4764" max-vertical-offset="5833">
+              <caret line="327" column="19" selection-start-line="327" selection-start-column="19" selection-end-line="327" selection-end-column="19" />
               <folding>
                 <element signature="e#269#312#0" expanded="false" />
                 <element signature="e#319#342#0" expanded="false" />
@@ -242,6 +252,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socomsa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -384,7 +408,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426984292714</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Footer additions, overall improvements.">
+      <created>1426997940863</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1426997940863</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,7 +487,8 @@
     <MESSAGE value="fluid layout improvements" />
     <MESSAGE value="- Smooth scrolling&#10;- Carousel&#10;- Content additions&#10;" />
     <MESSAGE value="Improvements in header and footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvements in header and footer" />
+    <MESSAGE value="Footer additions, overall improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer additions, overall improvements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -824,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43389198" vertical-offset="4764" max-vertical-offset="5833">
-          <caret line="330" column="48" selection-start-line="330" selection-start-column="48" selection-end-line="330" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.32774675" vertical-offset="4764" max-vertical-offset="5833">
+          <caret line="327" column="19" selection-start-line="327" selection-start-column="19" selection-end-line="327" selection-end-column="19" />
           <folding>
             <element signature="e#269#312#0" expanded="false" />
             <element signature="e#319#342#0" expanded="false" />

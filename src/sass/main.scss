@@ -32,6 +32,9 @@ main {
     width: 100%;
     padding: 5rem 5rem 0 5rem;
     text-align: justify;
+    p {
+      padding-left: 2rem;
+    }
     h1 {
       font-size: 2.5rem;
     }
@@ -83,7 +86,7 @@ main {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  width: 15rem;
+  width: 20rem;
   height: auto;
   z-index: 30;
   padding: 0;
@@ -107,17 +110,17 @@ main {
   float: right;
   width: 70%;
   display: table;
-  background: #333333;
+  @include texture(180deg, #222, #111, 22, 1);
   color: #f2f1dc;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 0.5rem 1rem 0 1rem;
   text-align: right;
   border-top: 0.3rem solid #ffb800;
-  border-left: 1px solid rgba(100,100,100,1);
-  border-bottom: 1px solid rgba(100,100,100,1);
+  border-left: 1px solid rgba(100, 100, 100, 1);
+  border-bottom: 1px solid rgba(100, 100, 100, 1);
   border-radius: 0 0 0 1rem;
-  box-shadow: inset 2px -2px 1px 0 rgba(200,200,200,0.6);
+  box-shadow: inset 2px -2px 1px 0 rgba(200, 200, 200, 0.6);
   p {
     display: inline-block;
     line-height: 2rem;
@@ -159,6 +162,7 @@ header {
     display: inline-block;
     position: relative;
     top: 2rem;
+    left: 1rem;
     float: left;
     height: 7rem;
     width: auto;
@@ -214,8 +218,28 @@ header {
 
 }
 
+.ubicacion {
+  display: table;
+  width: 100%;
+  h3, h4 {
+    padding-left: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
 #map_canvas {
   margin-bottom: 3rem;
+  display: inline-block;
+  width: 55rem;
+  float: right;
+}
+
+.half {
+  float: left;
+  width: 55rem;
+  display: inline-block;
 }
 
 .carousel {
@@ -260,7 +284,85 @@ footer {
   height: 20rem;
   width: 100%;
   border-top: 0.5rem solid #AAA;
-  box-shadow: 0 0 5px 1px rgba(50,50,50,0.8);
+  box-shadow: 0 0 5px 1px rgba(50, 50, 50, 0.8);
   @include texture(180deg, #777, #222, 67, 1);
   z-index: 99;
+  padding-top: 3rem;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  color: #fffee6;
+  font-size: 1.5rem;
+
+  .informacion {
+    text-align: right;
+    position: relative;
+    float: left;
+    width: 55rem;
+    display: block;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    strong {
+      float: left;
+    }
+    p:first-of-type {
+      padding-top: 2.3rem;
+    }
+    p:last-of-type {
+      padding-bottom: 2rem;
+    }
+  }
+  .formulario {
+    padding-right: 3rem;
+    position: relative;
+    display: block;
+    float: right;
+    width: 55rem;
+  }
+  form {
+
+    textarea {
+      background: rgba(50,50,50,0.5);
+      color: #fffee6;
+      resize: none;
+    }
+    button {
+      @include transition(all 0.5s ease-in-out);
+      display: block;
+      background: darken(#ffb800,10%);
+      &:hover {
+        background: darken(#ffb800,5%);
+      }
+    }
+
+    .field {
+      display: block;
+      margin: 0 0 0.5rem 0;
+      position: relative;
+
+      &:last-of-type {
+        padding-bottom: 3rem;
+      }
+
+      input {
+        color: #FFF9DF;
+        display: block;
+        font-size: 1.5rem;
+        outline: none;
+        border: 1px solid #999;
+        padding: 0.7rem;
+        background: transparent;
+        border-radius: 0.3rem;
+
+      }
+    }
+    .field span {
+      position: relative;
+      top: 2.7rem;
+      left: 0.7rem;
+      z-index: -1;
+    }
+  }
+
 }

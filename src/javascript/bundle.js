@@ -18,10 +18,10 @@ var bittersMap = (function () {
       mapCanvas = document.getElementById('map_canvas'),
       mapOptions = {
         center: mapCenter,
-        zoom: 14,
+        zoom: 15,
         scrollwheel: false,
         draggable: true,
-        disableDefaultUI: false,
+        disableDefaultUI: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       },
       map = new google.maps.Map(mapCanvas, mapOptions),
@@ -41,7 +41,7 @@ var bittersMap = (function () {
       marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Socomsa Ltda.'
+        title: 'Socomsa Ltda. Salar Surire 1274'
       });
 
   return {
@@ -107,3 +107,21 @@ function startCarousel() {
 }
 
 startCarousel();
+
+//Material design input
+
+$('input').focus(function(){
+  if (!$(this).val()) {
+    $(this).css({
+      'background-image': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOor80/AwAFIgI4cxCG7AAAAABJRU5ErkJggg==)',
+      'background-size': '0 100%',
+      'background-repeat': 'repeat-y'
+    });
+    $(this).parent().find('span').velocity({top: "-=3rem"},500,'linear');
+    $(this).velocity({'background-size': '100%'});
+  }})
+  .blur(function() {
+    if (!$(this).val()) {
+      $(this).parent().find('span').animate({top: "+=3rem"},500);
+      $(this).velocity({'background-size': '0%'},'linear');
+    }});

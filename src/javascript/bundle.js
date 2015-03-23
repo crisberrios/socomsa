@@ -113,7 +113,7 @@ startCarousel();
 $('input').focus(function(){
   if (!$(this).val()) {
     $(this).css({
-      'background-image': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOor80/AwAFIgI4cxCG7AAAAABJRU5ErkJggg==)',
+      'background-image': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMwqgcAAOYAsvYGvkIAAAAASUVORK5CYII=)',
       'background-size': '0 100%',
       'background-repeat': 'repeat-y'
     });

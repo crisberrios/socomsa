@@ -64,8 +64,6 @@ var bittersMap = (function () {
   };
 }());
 
-bittersMap.init();
-
 //carousel
 var carousel = {};
 carousel.dir = 'images/';
@@ -105,8 +103,29 @@ function startCarousel() {
   }
     setTimeout(startCarousel, 3000);
 }
+function CreateBannerText(arr,selector) {
+  var num = 0;
+  var items = arr.slice(0);
+  var sel = selector;
+  return function() {
+    num++;
+    if (num === items.length) {
+      console.log("reset");
+      num = 0;
+    }
+    var newEl = '<div class="animated fadeInLeftBig">'+items[num]+'</div>';
+    var sel = $("."+selector);
+    sel.fadeOut(500,function() {
+      sel.empty().append(newEl).show();
+    });
+  }
+}
+var bannerText = CreateBannerText(['CONDUCTORES ELÉCTRICOS','MATERIALES ELÉCTRICOS','TABLEROS ELÉCTRICOS'],'bannertext');
 
+bannerText();
+setInterval(bannerText,5000);
 startCarousel();
+bittersMap.init();
 
 //Material design input
 

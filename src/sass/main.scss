@@ -3,11 +3,24 @@
 @import "neat/neat";
 @import "base/base";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
 @import "map/map";
 @import "textures/textures";
+@import "animate/animate";
+
+
+
+$color1: #006F7F;
+$color2: #26747F;
+$color3: #008FCC;
+$color4: #00C1FF;
+$color5: #4CE8FF;
+$fontwhite: #f9f9f9;
+
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 html {
@@ -17,6 +30,9 @@ html {
 
 body {
   min-height: 100%;
+  h1,h2,h3,h4 {
+    font-family: 'Oswald', 'Open Sans', sans-serif;
+  }
 }
 
 main {
@@ -30,27 +46,31 @@ main {
     position: relative;
     float: left;
     width: 100%;
-    padding: 5rem 5rem 0 5rem;
+    padding: 5rem 10rem 0 10rem;
     text-align: justify;
     p {
       padding-left: 2rem;
     }
+    h1,h2,h3,h4 {
+      color: darken($color3,5%);
+    }
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     h2 {
-      width: 30rem;
+      width: 40rem;
       display: block;
       font-size: 2rem;
-      @include linear-gradient(to right, lighten(#ffb800, 20%), transparentize(#ffb800, 1));
+      @include linear-gradient(to right, lighten($color3, 10%), transparentize($color3, 1));
       background-color: white;
-      padding: 0.2rem 1rem;
-      border-radius: 1rem;
+      color: $fontwhite;
+      padding: 0.4rem 1rem;
+      border-radius: 1rem 0 0 1rem;
     }
     aside {
       float: right;
       width: 36rem;
-      padding: 2rem;
+      padding: 2rem 0 2rem 2rem;
       img {
         width: 100%;
         height: auto;
@@ -82,26 +102,38 @@ main {
   height: auto;
 }
 
-.iso {
+.iso, .isob {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  width: 20rem;
+  width: 10rem;
   height: auto;
   z-index: 30;
   padding: 0;
   margin: 0;
 }
+.isob {
+  bottom: 0;
+  right: 12rem;
+  width: 10rem;
+  height: auto;
+}
+
 
 .bannertext {
   position: absolute;
-  top: 7%;
-  right: 2%;
-  font-size: 3.5rem;
-  font-weight: Bold;
-  text-shadow: rgba(0, 0, 0, 0.5) 1px 2px;
-  color: hsla(20, 10, 90, 1);
-  z-index: 10;
+  top: 10%;
+  right: 8%;
+  overflow: visible;
+  display: block;
+  z-index: 20;
+  div {
+    font-size: 4rem;
+    font-weight: Bolder;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 2px;
+    font-family: 'Oswald', 'Oxygen', sans-serif;
+    color: $color5;
+  }
 }
 
 .topbar {
@@ -110,17 +142,23 @@ main {
   float: right;
   width: 70%;
   display: table;
-  @include texture(180deg, #222, #111, 22, 1);
-  color: #f2f1dc;
-  font-size: 1.3rem;
+  @include texture(180deg, #444, #333, 22, 1);
+  color: $fontwhite;
+  font-size: 1.5rem;
+  font-family: 'Oswald', 'Oxygen', sans-serif;
   font-weight: bold;
   padding: 0.5rem 1rem 0 1rem;
   text-align: right;
-  border-top: 0.3rem solid #ffb800;
-  border-left: 1px solid rgba(100, 100, 100, 1);
-  border-bottom: 1px solid rgba(100, 100, 100, 1);
+  border-top: 0.3rem solid lighten($color4,40%);
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   border-radius: 0 0 0 1rem;
-  box-shadow: inset 2px -2px 1px 0 rgba(200, 200, 200, 0.6);
+  box-shadow: inset 1px -1px 1px 0 rgba(250, 250, 250, 0.5);
+  a {
+    text-decoration: none;
+    color: $color5;
+  }
+
   p {
     display: inline-block;
     line-height: 2rem;
@@ -138,7 +176,7 @@ main {
         padding: 0.1rem;
       }
       &:hover {
-        @include radial-gradient(circle, #ffb800 0%, #ffb800 20%, transparent 90%);
+        @include radial-gradient(circle, $color4 0%, $color4 20%, transparent 90%);
       }
     }
 
@@ -153,10 +191,10 @@ header {
   padding: 0;
   height: 12rem;
   display: table;
-  border-bottom: 0.1rem solid #222;
-  box-shadow: 0 0.2rem 0.5rem 0.3rem #333;
+  border-bottom: 0.1rem solid #333;
+  box-shadow: 0 0.2rem 0.5rem 0.3rem #444;
   z-index: 20;
-  @include texture(180deg, #777, #222, 67, 1);
+  @include texture(180deg, lighten($color3,20%), $color3, 83, 0);
 
   .logo {
     display: inline-block;
@@ -180,7 +218,7 @@ header {
     display: table;
     height: 5rem;
     ul {
-      margin: 0 1rem;
+      margin: 0 4rem;
       li {
         display: inline-block;
         padding: 0;
@@ -188,24 +226,27 @@ header {
         vertical-align: top;
       }
       li a {
-        @include transition(all 0.5s ease-in-out);
+        font-family: 'Oswald', 'Open Sans', sans-serif;
+        @include transition(all 0.3s ease-in-out);
         display: table;
         height: 100%;
         border-top: 0.7rem solid transparent;
         border-radius: 0 0 0.3rem 0.3rem;
         box-sizing: border-box;
-        font-size: 1.8rem;
-        color: #eeebda;
+        font-size: 2rem;
+        color: $fontwhite;
         text-decoration: none;
         font-weight: bold;
-        padding: 1rem 0.5rem 0 1rem;
+        padding: 1.2rem 0.5rem 0 1rem;
         &:hover {
           color: #fffee6;
           text-decoration: underline;
+          border-color: $color4;
+          padding-top: 1.4rem;
         }
         &:focus {
-          background: rgba(50, 50, 50, 0.3);
-          border-color: #ffb800;
+          background: rgba(50, 50, 50, 0.1);
+          border-color: $color4;
           color: #fffee6;
           padding-top: 2rem;
           padding-bottom: 1rem;
@@ -232,13 +273,13 @@ header {
 #map_canvas {
   margin-bottom: 3rem;
   display: inline-block;
-  width: 55rem;
+  width: 50rem;
   float: right;
 }
 
 .half {
   float: left;
-  width: 55rem;
+  width: 50rem;
   display: inline-block;
 }
 
@@ -285,7 +326,7 @@ footer {
   width: 100%;
   border-top: 0.5rem solid #AAA;
   box-shadow: 0 0 5px 1px rgba(50, 50, 50, 0.8);
-  @include texture(180deg, #777, #222, 67, 1);
+  @include texture(180deg, darken($color3,5%), darken($color3,15%), 83, 0);
   z-index: 99;
   padding-top: 3rem;
   h2 {

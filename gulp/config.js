@@ -9,9 +9,12 @@ module.exports = {
     }
   },
   sass: {
-    srcFiles: src + "/sass/**",
-    src: src + "/sass",
-    dest: dest + "/css"
+    src: src + '/sass/**/*.{sass,scss}',
+    dest: dest + '/css',
+    settings: {
+      indentedSyntax: false, // Enable .sass syntax!
+      imagePath: 'images' // Used by the image-url helper
+    }
   },
   images: {
     src: src + "/images/**",

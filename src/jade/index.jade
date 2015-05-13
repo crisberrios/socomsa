@@ -1,7 +1,18 @@
 extends ./partials/_layout
 
 block content
-  header
+  .sidemenu
+    a(href="#header")
+      img(src="images/world.png")
+    span
+      a(href="#header") INICIO
+    span
+      a(href="#empresa") EMPRESA
+    span
+      a(href="#productos") PRODUCTOS
+    span
+      a(href="#contacto") CONTACTO
+  header#header
     img.logo(src="images/logo.png")
     .topbar
       p Salar Surire 1274, Parque Industrial ENEA, Pudahuel. Santiago, Chile.
@@ -50,38 +61,53 @@ block content
           h4 Santiago Poniente
           p Americo Vespucio hacia el norte, salida ENEA
         #map_canvas
-      h1 Productos
-      p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui. Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam. Pellentesque auctor fringilla neque. Duis eu massa ut lorem iaculis vestibulum. Maecenas facilisis elit sed justo. Quisque volutpat malesuada velit.
+      h1#productos Productos
+      ul.accordion-tabs
+        li.tab-header-and-content
+          a.is-active.tab-link(href='javascript:void(0)') CONDUCTORES ELÉCTRICOS
+          .tab-content
+            iframe.cablesframe(src="http://socomsa.cl/cables.php")
+        li.tab-header-and-content
+          a.tab-link(href='javascript:void(0)') MATERIALES ELÉCTRICOS
+          .tab-content
+            iframe.cablesframe(src="http://socomsa.cl/matel.php")
+        li.tab-header-and-content
+          a.tab-link(href='javascript:void(0)') TABLEROS ELÉCTRICOS
+          .tab-content
+            iframe.cablesframe(src="http://socomsa.cl/table.php")
+
       .productos
         .carousel
         img.bigcable(src="images/cables2.png")
   footer#contacto
-    .informacion
-      h2 INFORMACIÓN COMERCIAL
-      p
-        strong Razón social:
-        |  Sociedad Comercial Sajonia Limitada.
-      p
-        strong Nombre de Fantasía:
-        |  Socomsa Limitada.
-      p
-        strong RUT:
-        |  76.106.010-4
-      p
-        strong Giro:
-        |  Compra y venta de cables electricos y materiales de construcción.
-      p
-        strong Teléfono/Fax:
-        |  (56-2) 2944 2600
-      p
-        strong Correo Electrónico:
-        a(href="mailto:web@socomsa.cl")  web@socomsa.cl
-      p
-        strong Dirección:
-        |  Salar Surire 1274, Pudahuel. Santiago, Chile.
+    .footer-container
+      h2.footer-header INFORMACIÓN COMERCIAL
+      .informacion
+        .row
+          .title Razón social:
+          .desc Sociedad Comercial Sajonia Limitada.
+        .row
+          .title Nombre de Fantasía:
+          .desc  Socomsa Limitada.
+        .row
+          .title RUT:
+          .desc  76.106.010-4
+        .row
+          .title Giro:
+          .desc  Compra y venta de cables electricos y materiales de construcción.
+        .row
+          .title Teléfono/Fax:
+          .desc  (56-2) 2944 2600
+        .row
+          .title Correo Electrónico:
+          .desc
+            a(href="mailto:web@socomsa.cl")  web@socomsa.cl
+        .row
+          .title Dirección:
+          .desc  Salar Surire 1274, Pudahuel. Santiago, Chile.
       img.banner(src="images/empresa.jpg")
     .formulario
-      h2 CONTACTO
+      h2.footer-header CONTACTO
       form
         .field
           span Nombre:
@@ -95,8 +121,9 @@ block content
         .field
           span Teléfono (opcional):
           input(type='phone')
-        h2 MENSAJE
+        h2.footer-header MENSAJE
         textarea(rows="10")
-        button(type="submit") Enviar Mensaje
+        .button-container
+          button.submit(type="submit") Enviar Mensaje
   script(src="https://maps.googleapis.com/maps/api/js")
 

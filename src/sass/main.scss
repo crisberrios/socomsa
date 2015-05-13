@@ -7,13 +7,14 @@
 @import "map/map";
 @import "textures/textures";
 @import "animate/animate";
+@import "accordion/accordion";
 
 $color1: #006F7F;
 $color2: #26747F;
-$color3: #008FCC;
+$color3: #008a9e;
 $color4: #00C1FF;
 $color5: #4CE8FF;
-$fontwhite: #f9f9f9;
+$fontwhite: #f9f9f8;
 
 
 * {
@@ -29,6 +30,41 @@ body {
   min-height: 100%;
   h1,h2,h3,h4 {
     font-family: 'Oswald', 'Open Sans', sans-serif;
+  }
+}
+.cablesframe {
+  display: table;
+  width: 100%;
+  height: 120rem;
+  outline: none;
+  border: 0;
+
+}
+.sidemenu {
+  position: fixed;
+  left:0;
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  border-radius: 0 2rem 2rem 0;
+  top: 1rem;
+  background: $color4;
+  border: 1px solid $color1;
+  z-index: 9999999;
+  display: none;
+  text-align: center;
+  opacity: 0.6;
+  img {
+    width: 5rem;
+    height: auto;
+  }
+  span, span a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    color: $fontwhite;
+    font-weight: bold;
+    & a:hover {
+      color: $color1;
+    }
   }
 }
 
@@ -97,6 +133,7 @@ main {
   position: relative;
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .iso, .isob {
@@ -191,7 +228,7 @@ header {
   border-bottom: 0.1rem solid #333;
   box-shadow: 0 0.2rem 0.5rem 0.3rem #444;
   z-index: 20;
-  @include texture(180deg, lighten($color3,20%), $color3, 83, 0);
+  @include texture(180deg, lighten($color3,20%), lighten($color3,10%), 83, 0);
 
   .logo {
     display: inline-block;
@@ -199,7 +236,7 @@ header {
     top: 2rem;
     left: 1rem;
     float: left;
-    height: 7rem;
+    height: 8rem;
     width: auto;
     padding: 0.5rem 1rem 0.4rem 1rem;
     box-sizing: padding-box;
@@ -323,33 +360,45 @@ footer {
   width: 100%;
   border-top: 0.5rem solid #AAA;
   box-shadow: 0 0 5px 1px rgba(50, 50, 50, 0.8);
-  @include texture(180deg, darken($color3,5%), darken($color3,15%), 83, 0);
+  @include texture(180deg, $color3, darken($color3,10%), 83, 0);
   z-index: 99;
   padding-top: 3rem;
-  h2 {
+  .footer-header {
     font-size: 2rem;
     text-align: center;
   }
   color: #fffee6;
   font-size: 1.5rem;
 
-  .informacion {
-    text-align: right;
-    position: relative;
-    float: left;
+  .footer-container {
     width: 55rem;
-    display: block;
     padding-left: 3rem;
     padding-bottom: 5rem;
-    strong {
-      float: left;
+    text-align: left;
+    position: relative;
+    float: left;
+  }
+  .informacion {
+    width: 100%;
+    display: table;
+    margin-bottom: 2rem;
+    a {
+      color: $color4;
+      font-weight: bolder;
     }
-    p:first-of-type {
-      padding-top: 2.3rem;
+    .row {
+      display: table-row;
+      .title {
+        font-weight: bold;
+        display: table-cell;
+        padding: 1rem 0 1rem 0;
+      }
+      .desc {
+        display: table-cell;
+        padding: 1rem 0 1rem 0;
+      }
     }
-    p:last-of-type {
-      padding-bottom: 2rem;
-    }
+
   }
   .formulario {
     padding-right: 3rem;
@@ -365,12 +414,18 @@ footer {
       color: #fffee6;
       resize: none;
     }
-    button {
+    .button-container {
+      display: block;
+      width: 100%;
+    }
+    .submit {
       @include transition(all 0.5s ease-in-out);
       display: block;
-      background: darken(#ffb800,10%);
+      padding: 1rem 5rem;
+      margin: 0 auto;
+      background: $color3;
       &:hover {
-        background: darken(#ffb800,5%);
+        background: lighten($color3,5);
       }
     }
 
@@ -378,10 +433,6 @@ footer {
       display: block;
       margin: 0 0 0.5rem 0;
       position: relative;
-
-      &:last-of-type {
-        padding-bottom: 3rem;
-      }
 
       input {
         color: #FFF9DF;

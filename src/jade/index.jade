@@ -66,16 +66,11 @@ block content
         li.tab-header-and-content
           a.is-active.tab-link(href='javascript:void(0)') CONDUCTORES ELÉCTRICOS
           .tab-content
-            iframe.cablesframe(src="http://socomsa.cl/cables.php")
+            include ./partials/_conductores.jade
         li.tab-header-and-content
-          a.tab-link(href='javascript:void(0)') MATERIALES ELÉCTRICOS
+          a.tab-link(href='javascript:void(0)') FERRETERÍA ELÉCTRICA
           .tab-content
-            iframe.cablesframe(src="http://socomsa.cl/matel.php")
-        li.tab-header-and-content
-          a.tab-link(href='javascript:void(0)') TABLEROS ELÉCTRICOS
-          .tab-content
-            iframe.cablesframe(src="http://socomsa.cl/table.php")
-
+            include ./partials/_ferreteria.jade
       .productos
         .carousel
         img.bigcable(src="images/cables2.png")
@@ -108,21 +103,22 @@ block content
       img.banner(src="images/empresa.jpg")
     .formulario
       h2.footer-header CONTACTO
-      form
+      form#contactform
         .field
           span Nombre:
-          input(type='text')
+          input(type='text' name="nombre")
         .field
           span Correo electrónico:
-          input(type='email')
+          input(type='email' name="email")
         .field
           span Empresa (opcional):
-          input(type='text')
+          input(type='text' name="empresa")
         .field
           span Teléfono (opcional):
-          input(type='phone')
+          input(type='phone' name="telefono")
+          input(type="text" name="_gotcha" style="display:none")
         h2.footer-header MENSAJE
-        textarea(rows="10")
+        textarea(rows="10" name="mensaje")
         .button-container
           button.submit(type="submit") Enviar Mensaje
   script(src="https://maps.googleapis.com/maps/api/js")

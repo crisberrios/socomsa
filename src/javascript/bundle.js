@@ -177,5 +177,23 @@ $(window).on('scroll',function() {
     $('.sidemenu').fadeOut();
   }
 });
-
+//formspree
+var frm = $('#contactform');
+frm.submit(function (ev) {
+  $.ajax({
+    url: "//formspree.io/web@socomsa.cl",
+    method: "POST",
+    data: frm.serialize(),
+    dataType: "json",
+    success: function (data) {
+      $('#contactform').
+        find(".submit").
+        text("¡Gracias por su mensaje!");
+      $('#contactform').
+        find(".submit").
+        prop("disabled",true);
+    }
+  });
+  ev.preventDefault();
+});
 

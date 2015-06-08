@@ -1,12 +1,12 @@
 .accordion-tabs {
   $base-border-color: gainsboro !default;
   $base-border-radius: 0.3rem 0.3rem 0 0 !default;
-  $base-background-color: white !default;
+  $base-background-color: #00ff06 !default;
   $base-spacing: 1.5rem !default;
-  $action-color: #477DCA !default;
+  $action-color: #206a63;
   $base-link-color: $action-color !default;
   $dark-gray: #333 !default;
-  $light-gray: #4CE8FF;
+  $light-gray: #a7b1af;
   $tab-border: 1px solid $base-border-color;
   $tab-content-background: lighten($light-gray, 25);
   $tab-active-background: $tab-content-background;
@@ -75,5 +75,40 @@
     border-top-right-radius: $base-border-radius;
     border: $tab-border;
     float: left;
+    .provrow {
+      display: table;
+      position: relative;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .proveedor {
+      display: table-cell;
+      width: 50%;
+      float: left;
+      .prodlogo {
+        padding-bottom: 1rem;
+        img {
+          display: inline-block;
+          margin-left: 8rem;
+          padding: 0;
+          border: 0.3rem solid #aaa;
+          border-radius: 0.7rem;
+        }
+      }
+      ul {
+        padding-left: 5rem;
+      }
+      ul li {
+        font-family: 'Oswald', 'Oxygen', sans-serif;
+        &:nth-child(odd) {
+         color: $action-color;
+        }
+      }
+    }
   }
+}
+.separator {
+  display: table;
+  height: 2rem;
+
 }

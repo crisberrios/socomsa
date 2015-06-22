@@ -78,6 +78,8 @@ carousel.images= [
   'marca7.png',
   'marca8.png',
   'marca9.png',
+  'marca10.jpg',
+  'marlew.jpg'
 ];
 
 function generateItem(image) {
